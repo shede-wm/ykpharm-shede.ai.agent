@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>四川依科制药有限公司 - 2026年奖补项目申报清单</title>
+    <style>
+        :root { --primary: #1a3a5c; --primary-light: #2d5f8a; --accent: #e8943a; --accent-light: #f5b971; --bg: #f4f6f9; --card-bg: #ffffff; --text: #2c3e50; --text-light: #6c7a89; --border: #dce3ec; --success: #27ae60; --warning: #f39c12; --info: #3498db; --danger: #e74c3c; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+        .header { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); color: white; padding: 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 20px rgba(0,0,0,0.15); }
+        .header-inner { max-width: 1400px; margin: 0 auto; padding: 20px 40px; display: flex; align-items: center; justify-content: space-between; }
+        .header h1 { font-size: 24px; font-weight: 700; letter-spacing: 1px; }
+        .header h1 span { color: var(--accent-light); font-weight: 400; font-size: 16px; margin-left: 12px; }
+        .header-meta { font-size: 13px; opacity: 0.85; }
+        .nav { background: var(--primary); border-top: 1px solid rgba(255,255,255,0.1); }
+        .nav-inner { max-width: 1400px; margin: 0 auto; padding: 0 40px; display: flex; gap: 0; overflow-x: auto; }
+        .nav a { color: rgba(255,255,255,0.75); text-decoration: none; padding: 14px 22px; font-size: 14px; white-space: nowrap; transition: all 0.2s; border-bottom: 3px solid transparent; }
+        .nav a:hover, .nav a.active { color: white; background: rgba(255,255,255,0.05); border-bottom-color: var(--accent); }
+        .container { max-width: 1400px; margin: 0 auto; padding: 30px 40px 60px; }
+        .section { margin-bottom: 40px; scroll-margin-top: 120px; }
+        .section-title { font-size: 22px; font-weight: 700; color: var(--primary); margin-bottom: 20px; padding-bottom: 12px; border-bottom: 3px solid var(--accent); display: flex; align-items: center; gap: 10px; }
+        .section-title .icon { width: 32px; height: 32px; background: var(--accent); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 16px; }
+        .card { background: var(--card-bg); border-radius: 12px; padding: 28px 32px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); border: 1px solid var(--border); margin-bottom: 20px; }
+        .card h3 { font-size: 17px; color: var(--primary); margin-bottom: 12px; font-weight: 600; }
+        .card p { color: var(--text); font-size: 15px; line-height: 1.85; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 20px; }
+        .info-item { background: var(--card-bg); border-radius: 12px; padding: 22px 26px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); border: 1px solid var(--border); border-left: 4px solid var(--accent); }
+        .info-item .label { font-size: 12px; color: var(--text-light); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+        .info-item .value { font-size: 16px; font-weight: 600; color: var(--primary); }
+        .badge-group { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+        .badge { display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 500; }
+        .badge-national { background: linear-gradient(135deg, #e74c3c22, #e74c3c11); color: #c0392b; border: 1px solid #e74c3c44; }
+        .badge-province { background: linear-gradient(135deg, #3498db22, #3498db11); color: #2471a3; border: 1px solid #3498db44; }
+        .badge-city { background: linear-gradient(135deg, #27ae6022, #27ae6011); color: #1e8449; border: 1px solid #27ae6044; }
+        .badge-other { background: linear-gradient(135deg, #8e44ad22, #8e44ad11); color: #6c3483; border: 1px solid #8e44ad44; }
+        .biz-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+        .biz-card { background: var(--card-bg); border-radius: 12px; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); border: 1px solid var(--border); transition: transform 0.2s, box-shadow 0.2s; }
+        .biz-card:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
+        .biz-card .biz-icon { width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 14px; }
+        .biz-card h4 { font-size: 16px; color: var(--primary); margin-bottom: 8px; }
+        .biz-card p { font-size: 13px; color: var(--text-light); line-height: 1.6; }
+        .table-wrapper { overflow-x: auto; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); border: 1px solid var(--border); background: white; }
+        table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 1600px; }
+        thead th { background: linear-gradient(135deg, var(--primary), var(--primary-light)); color: white; padding: 14px 16px; text-align: left; font-weight: 600; font-size: 13px; letter-spacing: 0.5px; white-space: nowrap; }
+        tbody td { padding: 14px 16px; border-bottom: 1px solid var(--border); vertical-align: top; }
+        tbody tr:hover { background: #f0f5ff; }
+        tbody tr:last-child td { border-bottom: none; }
+        .level-tag { display: inline-block; padding: 3px 10px; border-radius: 12px; font-size: 12px; font-weight: 600; white-space: nowrap; }
+        .level-national { background: #fde8e8; color: #c0392b; }
+        .level-province { background: #e8f0fe; color: #2471a3; }
+        .level-city { background: #e8f8e8; color: #1e8449; }
+        .level-district { background: #f3e8fd; color: #6c3483; }
+        .amount { font-weight: 700; color: var(--accent); font-size: 15px; }
+        .category-tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 500; background: #f0f0f0; color: #555; }
+        .tech-tag { display: inline-block; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 500; background: #e8f4fd; color: #2471a3; margin: 1px 2px; white-space: nowrap; }
+        .tech-tag.ai { background: #fde8f4; color: #c0392b; }
+        .tech-tag.hw { background: #e8fde8; color: #1e8449; }
+        .tech-tag.sw { background: #f3e8fd; color: #6c3483; }
+        .stats-bar { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-bottom: 30px; }
+        .stat-card { background: white; border-radius: 12px; padding: 24px; text-align: center; box-shadow: 0 2px 12px rgba(0,0,0,0.06); border: 1px solid var(--border); }
+        .stat-card .stat-num { font-size: 36px; font-weight: 800; background: linear-gradient(135deg, var(--primary), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .stat-card .stat-label { font-size: 13px; color: var(--text-light); margin-top: 4px; }
+        .filter-bar { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+        .filter-btn { padding: 8px 18px; border: 1px solid var(--border); border-radius: 20px; background: white; color: var(--text); font-size: 13px; cursor: pointer; transition: all 0.2s; }
+        .filter-btn:hover, .filter-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
+        .timeline { position: relative; padding-left: 30px; }
+        .timeline::before { content: ''; position: absolute; left: 8px; top: 0; bottom: 0; width: 3px; background: linear-gradient(to bottom, var(--accent), var(--primary)); border-radius: 2px; }
+        .timeline-item { position: relative; margin-bottom: 24px; padding: 18px 24px; background: var(--card-bg); border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); border: 1px solid var(--border); }
+        .timeline-item::before { content: ''; position: absolute; left: -26px; top: 24px; width: 14px; height: 14px; background: var(--accent); border-radius: 50%; border: 3px solid white; box-shadow: 0 0 0 2px var(--accent); }
+        .timeline-item .year { font-size: 13px; font-weight: 700; color: var(--accent); margin-bottom: 4px; }
+        .timeline-item h4 { font-size: 15px; color: var(--primary); margin-bottom: 6px; }
+        .timeline-item p { font-size: 13px; color: var(--text-light); }
+        .status-done { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 11px; background: #27ae6022; color: #27ae60; font-weight: 600; }
+        .status-progress { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 11px; background: #f39c1222; color: #f39c12; font-weight: 600; }
+        .policy-ref a { color: var(--info); text-decoration: none; border-bottom: 1px dashed var(--info); font-size: 13px; transition: all 0.2s; word-break: break-all; }
+        .policy-ref a:hover { color: var(--primary); border-bottom-style: solid; }
+        .policy-card a { color: var(--info); text-decoration: none; border-bottom: 1px dashed var(--info); transition: all 0.2s; }
+        .policy-card a:hover { color: var(--primary); border-bottom-style: solid; }
+        .ext-icon { display: inline-block; font-size: 10px; margin-left: 2px; opacity: 0.6; }
+        .roadmap { margin-top: 24px; }
+        .roadmap-quarter { display: flex; gap: 12px; margin-bottom: 14px; align-items: flex-start; }
+        .roadmap-label { min-width: 72px; font-size: 14px; font-weight: 700; color: var(--primary); text-align: center; background: white; border-radius: 8px; padding: 8px 4px; border: 1px solid var(--border); box-shadow: 0 1px 4px rgba(0,0,0,0.04); }
+        .roadmap-items { flex: 1; display: flex; flex-wrap: wrap; gap: 8px; }
+        .roadmap-item { padding: 8px 14px; border-radius: 8px; font-size: 12px; font-weight: 500; border: 1px solid; line-height: 1.5; max-width: 280px; }
+        .roadmap-item.national { background: #fde8e811; border-color: #e74c3c44; color: #c0392b; }
+        .roadmap-item.province { background: #e8f0fe11; border-color: #3498db44; color: #2471a3; }
+        .roadmap-item.city { background: #e8f8e811; border-color: #27ae6044; color: #1e8449; }
+        .unit-summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-top: 20px; }
+        .unit-card { background: white; border-radius: 10px; padding: 18px 20px; border: 1px solid var(--border); box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+        .unit-card .unit-name { font-size: 13px; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+        .unit-card .unit-count { font-size: 24px; font-weight: 800; background: linear-gradient(135deg, var(--primary), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .unit-card .unit-desc { font-size: 12px; color: var(--text-light); margin-top: 4px; }
+        .lifecycle-bar { margin-top: 20px; padding: 20px 24px; background: #f8f9fc; border-radius: 10px; border: 1px solid var(--border); }
+        .lifecycle-bar h4 { font-size: 14px; color: var(--primary); margin-bottom: 16px; font-weight: 600; }
+        .lifecycle-steps { display: flex; gap: 0; position: relative; }
+        .lifecycle-step { flex: 1; text-align: center; position: relative; padding: 0 4px; }
+        .lifecycle-step .bar { height: 8px; border-radius: 4px; margin-bottom: 10px; }
+        .lifecycle-step:nth-child(1) .bar { background: #3498db; }
+        .lifecycle-step:nth-child(2) .bar { background: #9b59b6; }
+        .lifecycle-step:nth-child(3) .bar { background: #27ae60; }
+        .lifecycle-step:nth-child(4) .bar { background: #e74c3c; }
+        .lifecycle-step .step-label { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 2px; }
+        .lifecycle-step .step-pct { font-size: 18px; font-weight: 800; background: linear-gradient(135deg, var(--primary), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .contact-bar { margin-top: 20px; padding: 16px 28px; background: white; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); border: 1px solid var(--border); display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
+        .contact-bar-title { font-size: 14px; font-weight: 700; color: var(--primary); white-space: nowrap; padding-right: 12px; border-right: 2px solid var(--border); }
+        .contact-bar-name { font-size: 18px; font-weight: 800; color: var(--primary); letter-spacing: 1px; }
+        .contact-bar-info { font-size: 13px; color: var(--text); }
+        .contact-bar-info .cb-label { color: var(--text-light); margin-right: 4px; }
+        .contact-bar-info a { color: var(--primary); text-decoration: none; font-weight: 700; font-size: 15px; }
+        .contact-bar-info a:hover { color: var(--accent); }
+        .contact-bar-sep { width: 1px; height: 28px; background: var(--border); }
+        .collapse-group { margin-top: 48px; padding-top: 32px; border-top: 2px dashed var(--border); }
+        .collapse-group-title { font-size: 16px; font-weight: 600; color: var(--text-light); margin-bottom: 16px; text-align: center; letter-spacing: 2px; }
+        .collapse-section { margin-bottom: 12px; border-radius: 12px; overflow: hidden; background: var(--card-bg); box-shadow: 0 2px 12px rgba(0,0,0,0.06); border: 1px solid var(--border); }
+        .collapse-section summary { padding: 18px 28px; cursor: pointer; font-size: 16px; font-weight: 600; color: var(--primary); display: flex; align-items: center; gap: 12px; list-style: none; border-left: 4px solid var(--accent); transition: background 0.2s; }
+        .collapse-section summary::-webkit-details-marker { display: none; }
+        .collapse-section summary:hover { background: #f8f9fc; }
+        .collapse-section summary::before { content: '\25B6'; font-size: 12px; color: var(--accent); transition: transform 0.3s; flex-shrink: 0; }
+        .collapse-section[open] summary::before { transform: rotate(90deg); }
+        .collapse-section[open] summary { border-bottom: 1px solid var(--border); background: #f8f9fc; }
+        .collapse-section .collapse-body { padding: 24px 28px; animation: fadeSlideIn 0.3s ease; }
+        @keyframes fadeSlideIn { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
+        .footer { background: var(--primary); color: rgba(255,255,255,0.7); text-align: center; padding: 24px; font-size: 13px; }
+        @media print { .header, .nav, .filter-bar { position: static; } .section { page-break-inside: avoid; } }
+        @media (max-width: 768px) { .container { padding: 16px; } .header-inner { padding: 16px; flex-direction: column; gap: 8px; } .nav-inner { padding: 0 16px; } .stats-bar { grid-template-columns: repeat(2, 1fr); } .info-grid { grid-template-columns: 1fr; } .contact-bar { flex-direction: column; align-items: flex-start; gap: 12px; } .contact-bar-sep { display: none; } }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="header-inner">
+        <h1>四川依科制药有限公司 <span>2026年度奖补项目申报清单</span></h1>
+        <div class="header-meta">编制日期：2026年6月26日 &nbsp;|&nbsp; 隶属蜀中药业集团</div>
+    </div>
+    <div class="nav">
+        <div class="nav-inner">
+            <a href="#projects" class="active">可申报项目清单</a>
+            <a href="#policy">政策依据汇总</a>
+            <a href="#tips">重要提示</a>
+            <a href="#company">企业详情 &#9660;</a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <!-- ===== 1. 可申报项目清单 ===== -->
+    <div class="section" id="projects">
+        <div class="section-title">
+            <div class="icon">1</div>
+            2026年可申报奖补项目清单
+        </div>
+
+        <div class="stats-bar">
+            <div class="stat-card"><div class="stat-num">12</div><div class="stat-label">可申报项目总数</div></div>
+            <div class="stat-card"><div class="stat-num">~6400+</div><div class="stat-label">预计奖补总额（万元）</div></div>
+            <div class="stat-card"><div class="stat-num">6</div><div class="stat-label">国家级项目</div></div>
+            <div class="stat-card"><div class="stat-num">6</div><div class="stat-label">省/市级项目</div></div>
+        </div>
+
+        <div class="filter-bar">
+            <button class="filter-btn active" onclick="filterTable('all')">全部</button>
+            <button class="filter-btn" onclick="filterTable('national')">国家级</button>
+            <button class="filter-btn" onclick="filterTable('province')">省级</button>
+            <button class="filter-btn" onclick="filterTable('city')">市级</button>
+        </div>
+
+        <div class="table-wrapper">
+            <table id="projectTable">
+                <thead><tr>
+                    <th style="width:40px">序号</th>
+                    <th style="min-width:180px">可申报项目名称</th>
+                    <th style="min-width:100px">项目类别</th>
+                    <th style="min-width:110px">归口部门</th>
+                    <th style="min-width:80px">申报层级</th>
+                    <th style="min-width:80px">申报周期</th>
+                    <th style="min-width:100px">预计奖补金额（万元）</th>
+                    <th style="min-width:120px">关键技术方向</th>
+                    <th style="min-width:220px">申报核心条件</th>
+                    <th style="min-width:200px">所需材料</th>
+                    <th style="min-width:200px">政策依据（官方文件）</th>
+                </tr></thead>
+                <tbody>
+                    <!-- 项目1：超长期特别国债设备更新 -->
+                    <tr data-level="national">
+                        <td>1</td>
+                        <td><strong>超长期特别国债工业设备更新改造专项（第三批）</strong></td>
+                        <td><span class="category-tag">设备更新</span></td>
+                        <td>国家发改委/财政部</td>
+                        <td><span class="level-tag level-national">国家级</span></td>
+                        <td>6-8月（第三批）</td>
+                        <td class="amount">设备投资15%-30%，最高10000万</td>
+                        <td><span class="tech-tag hw">制药设备</span><span class="tech-tag hw">自动化产线</span><span class="tech-tag sw">MES系统</span></td>
+                        <td>固定资产投资&ge;200万元（不含土地、厂房）；淘汰落后设备替换智能高效新设备；投资完成率&le;80%；无失信记录</td>
+                        <td>项目备案/核准文件；设备采购合同及发票；设备淘汰清单与新设备方案；环评批复；企业信用报告</td>
+                        <td class="policy-ref"><a href="https://www.ndrc.gov.cn/fggz/202604/t20260430_1405007.html" target="_blank" rel="noopener">发改环资〔2026〕大规模设备更新和消费品以旧换新政策<span class="ext-icon">&#8599;</span></a></td>
+                    </tr>
+                    <!-- 项目2：四川智改数转 -->
+                    <tr data-level="national">
+                        <td>2</td>
+                        <td><strong>四川省工业领域设备更新和技术改造"智改数转"项目</strong></td>
+                        <td><span class="category-tag">智改数转</span></td>
+                        <td>四川省经信厅</td>
+                        <td><span class="level-tag level-national">国家级</span></td>
+                        <td>入库1-2月；正式申报3月</td>
+                        <td class="amount">设备购置额20%，重点最高2000万/切块最高1000万</td>
+                        <td><span class="tech-tag hw">智能制药设备</span><span class="tech-tag sw">DCS/SCADA</span><span class="tech-tag ai">智能质检</span></td>
+                        <td>独立法人工业企业，近3年无重大安全/环保/质量事故；重点项目设备投资&ge;2000万元，切块项目设备投资&ge;800万元；智能制造能力成熟度&ge;二级；项目年内基本竣工</td>
+                        <td>项目入库申请表；可行性研究报告；设备投资清单；GMP合规证明；环评/安评报告；财务审计报告</td>
+                        <td class="policy-ref"><a href="http://jxt.sc.gov.cn/scjxt/wjfb/2026/1/23/134f980e650645b684b7be3b22f8d8fa.shtml" target="_blank" rel="noopener">关于做好2026年四川省"智改数转"项目入库申报工作的通知<span class="ext-icon">&#8599;</span></a></td>
+                    </tr>
+                    <!-- 项目3：产业基础再造 -->
+                    <tr data-level="national">
+                        <td>3</td>
+                        <td><strong>产业基础再造和制造业高质量发展专项</strong></td>
+                        <td><span class="category-tag">基础材料</span></td>
+                        <td>工信部/发改委</td>
+                        <td><span class="level-tag level-national">国家级</span></td>
+                        <td>4-5月申报</td>
+                        <td class="amount">总投资10%-20%，最高5000万</td>
+                        <td><span class="tech-tag hw">原料药工艺</span><span class="tech-tag sw">质量追溯</span><span class="tech-tag ai">智能检测</span></td>
+                        <td>聚焦核心基础零部件/先进工艺/关键材料等四基领域；总投资&ge;5000万元，研发投入&ge;20%；拥有发明专利&ge;5项</td>
+                        <td>项目可行性研究报告；专利证书清单；研发投入审计报告；项目备案/核准文件；产业链合作证明</td>
+                        <td class="policy-ref"><a href="https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/" target="_blank" rel="noopener">工信部产业基础再造和制造业高质量发展专项管理办法<span class="ext-icon">&#8599;</span></a></td>
+                    </tr>
+                    <!-- 项目4：医药工业数智化转型 -->
+                    <tr data-level="national">
+                        <td>4</td>
+                        <td><strong>医药工业数智化转型示范项目</strong></td>
+                        <td><span class="category-tag">医药数智化</span></td>
+                        <td>工信部等七部门</td>
+                        <td><span class="level-tag level-national">国家级</span></td>
+                        <td>下半年（关注通知）</td>
+                        <td class="amount">视项目规模，最高1000万</td>
+                        <td><span class="tech-tag sw">药品追溯系统</span><span class="tech-tag ai">AI质检</span><span class="tech-tag sw">数字孪生</span></td>
+                        <td>医药制造企业；已完成数字化基础建设；在药品生产全流程数智化方面有典型应用；符合GMP要求</td>
+                        <td>数智化转型方案；系统部署及验收报告；GMP证书；数字化转型成效数据；典型案例材料</td>
+                        <td class="policy-ref"><a href="https://www.cqn.com.cn/qt/content/2025-04/25/content_9102740.htm" target="_blank" rel="noopener">工信部联消费〔2025〕79号《医药工业数智化转型实施方案（2025-2030年）》<span class="ext-icon">&#8599;</span></a></td>
+                    </tr>
+                    <!-- 项目5：智能工厂梯度培育 -->
+                    <tr data-level="national">
+                        <td>5</td>
+                        <td><strong>智能工厂梯度培育项目（基础级/先进级）</strong></td>
+                        <td><span class="category-tag">智能制造</span></td>
+                        <td>工信部等六部门</td>
+                        <td><span class="level-tag level-national">国家级</span></td>
+                        <td>省级1-3月；国家级4-5月</td>
+                        <td class="amount">基础级50万以下，先进级50-100万</td>
+                        <td><span class="tech-tag hw">设备联网</span><span class="tech-tag sw">SCADA/MES</span><span class="tech-tag ai">智能排产</span></td>
+                        <td>规上工业企业，独立法人；基础级：设备联网率&ge;50%，自评测&ge;60分；先进级：成熟度&ge;三级</td>
+                        <td>智能工厂自评测报告；设备联网证明；智能制造成熟度评估报告；GMP合规文件；企业财务报表</td>
+                        <td class="policy-ref"><a href="https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/" target="_blank" rel="noopener">智能工厂梯度培育管理办法（暂行）<span class="ext-icon">&#8599;</span></a></td>
+                    </tr>
+                    <!-- 项目6：绿色制造融合 -->
+                    <tr data-level="national">
+                        <td>6</td>
+                        <td><strong>绿色制造与智能制造融合项目</strong></td>
+                        <td><span class="category-tag">绿色制造</span></td>
+                        <td>发改委/工信部</td>
+                        <td><span class="level-tag level-national">国家级</span></td>
+                        <td>绿色工厂3-4月；融合项目5-6月</td>
+                        <td class="amount">节能设备投资15%，最高1000万</td>
+                        <td><span class="tech-tag sw">EMS能源管理</span><span class="tech-tag hw">节能设备</span></td>
+                        <td>已获评或拟申报绿色工厂；单位产品能耗降低&ge;20%；建成EMS能源管理系统；无环保处罚记录</td>
+                        <td>绿色工厂评价报告；能源管理体系认证；碳排放数据；清洁生产审核报告；节能改造项目方案</td>
+                        <td class="policy-ref">发改委绿色制造工程/工信部绿色工厂评价标准</td>
+                    </tr>
+                    <!-- 项目7：四川省生物医药21条 -->
+                    <tr data-level="province">
+                        <td>7</td>
+                        <td><strong>四川省支持生物医药产业高质量发展奖补</strong></td>
+                        <td><span class="category-tag">生物医药</span></td>
+                        <td>四川省经信厅/药监局</td>
+                        <td><span class="level-tag level-province">省级</span></td>
+                        <td>全年/按通知</td>
+                        <td class="amount">仿制药一致性评价100-300万/品种；创新药最高5000万/年</td>
+                        <td><span class="tech-tag sw">药品研发</span><span class="tech-tag hw">制剂工艺</span></td>
+                        <td>四川省内注册医药企业；通过仿制药一致性评价或开展创新药研发；符合7方面21条政策方向</td>
+                        <td>一致性评价批件/创新药临床批件；研发投入证明；项目实施方案；企业财务报表</td>
+                        <td class="policy-ref"><a href="https://www.sc.gov.cn/10462/zfwjts/2025/12/16/272f003d8a1e419cbae73940e7179562.shtml" target="_blank" rel="noopener">《四川省支持生物医药和医疗器械产业高质量发展若干政策措施》<span class="ext-icon">&#8599;</span></a></td>
+                    </tr>
+                    <!-- 项目8：四川省绿色工厂 -->
+                    <tr data-level="province">
+                        <td>8</td>
+                        <td><strong>四川省绿色工厂认定</strong></td>
+                        <td><span class="category-tag">绿色制造</span></td>
+                        <td>四川省经信厅</td>
+                        <td><span class="level-tag level-province">省级</span></td>
+                        <td>3-5月</td>
+                        <td class="amount">省级认定奖励20-50万</td>
+                        <td><span class="tech-tag sw">能源管理</span><span class="tech-tag hw">环保设备</span></td>
+                        <td>完成绿色工厂自评（第三方）；单位产品能耗达到行业先进水平；建立ISO14001环境管理体系；近三年无环保处罚</td>
+                        <td>绿色工厂评价报告（第三方）；环境管理体系认证；碳排放数据报告；清洁生产审核报告</td>
+                        <td class="policy-ref">绿色工厂梯度培育及管理暂行办法（四川省经信厅）</td>
+                    </tr>
+                    <!-- 项目9：四川省研发投入激励 -->
+                    <tr data-level="province">
+                        <td>9</td>
+                        <td><strong>四川省激励企业加大研发投入补贴</strong></td>
+                        <td><span class="category-tag">研发激励</span></td>
+                        <td>四川省科技厅</td>
+                        <td><span class="level-tag level-province">省级</span></td>
+                        <td>全年/按通知</td>
+                        <td class="amount">研发增量300-1000万补20万；1000-5000万补60万；5000万以上补100万</td>
+                        <td><span class="tech-tag sw">药品研发</span><span class="tech-tag sw">工艺优化</span></td>
+                        <td>四川省注册企业；研发投入有实质性增量；研发费用加计扣除申报合规；财务制度健全</td>
+                        <td>研发投入增量证明材料；研发费用加计扣除备案表；财务审计报告；研发项目清单</td>
+                        <td class="policy-ref"><a href="http://kjt.sc.gov.cn/xzgfxwj/2026/5/25/cd373c74f9574cafa05e0f495d329bd3.shtml" target="_blank" rel="noopener">《四川省激励企业加大研发投入暂行办法》<span class="ext-icon">&#8599;</span></a></td>
+                    </tr>
+                    <!-- 项目10：德阳市技改试点 -->
+                    <tr data-level="city">
+                        <td>10</td>
+                        <td><strong>德阳市国家制造业新型技改试点城市企业项目</strong></td>
+                        <td><span class="category-tag">技术改造</span></td>
+                        <td>德阳市经信局</td>
+                        <td><span class="level-tag level-city">市级</span></td>
+                        <td>2026年下半年起</td>
+                        <td class="amount">中央财政3亿奖补分配，企业项目视规模而定</td>
+                        <td><span class="tech-tag hw">智能装备</span><span class="tech-tag sw">数字化系统</span></td>
+                        <td>德阳市注册工业企业；有明确的技术改造/数字化转型项目；项目已备案且在实施期内</td>
+                        <td>技改项目备案表；项目投资计划；设备采购方案；数字化转型方案</td>
+                        <td class="policy-ref"><a href="https://www.deyang.gov.cn/xwdt/dydt/1954459.htm" target="_blank" rel="noopener">德阳市入选第三批制造业新型技术改造城市试点<span class="ext-icon">&#8599;</span></a></td>
+                    </tr>
+                    <!-- 项目11：德阳市3+1产业政策 -->
+                    <tr data-level="city">
+                        <td>11</td>
+                        <td><strong>德阳市"3+1"主导产业提质倍增奖补</strong></td>
+                        <td><span class="category-tag">产业发展</span></td>
+                        <td>德阳市经信局</td>
+                        <td><span class="level-tag level-city">市级</span></td>
+                        <td>按年度通知</td>
+                        <td class="amount">新获批平台奖励10-50万；绿色转型奖10-30万</td>
+                        <td><span class="tech-tag hw">制药设备</span><span class="tech-tag sw">信息化</span></td>
+                        <td>德阳市"3+1"主导产业企业（含医药健康）；企业有实质性提质增效成果；符合政策有效期（2023.11-2028.11）</td>
+                        <td>企业提质增效报告；新获批平台认定文件；绿色转型成效证明</td>
+                        <td class="policy-ref"><a href="https://www.deyang.gov.cn/gk/hqzc/dyfzc/1892242.htm" target="_blank" rel="noopener">《德阳市支持"3+1"主导产业提质倍增的若干政策》<span class="ext-icon">&#8599;</span></a></td>
+                    </tr>
+                    <!-- 项目12：广汉市产业投资支持 -->
+                    <tr data-level="city">
+                        <td>12</td>
+                        <td><strong>广汉市促进产业投资支持政策</strong></td>
+                        <td><span class="category-tag">综合奖励</span></td>
+                        <td>广汉市经信科局</td>
+                        <td><span class="level-tag level-city">市级</span></td>
+                        <td>全年/按通知</td>
+                        <td class="amount">国家级技术中心50万；省级技术中心30万</td>
+                        <td><span class="tech-tag sw">创新平台</span><span class="tech-tag sw">研发中心</span></td>
+                        <td>广汉市注册企业；获得省级及以上创新平台认定；符合广汉市产业投资方向</td>
+                        <td>上级认定文件；企业营业执照；项目投资证明</td>
+                        <td class="policy-ref"><a href="https://www.guanghan.gov.cn" target="_blank" rel="noopener">广汉市促进产业投资支持政策<span class="ext-icon">&#8599;</span></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 路线图 -->
+        <div style="margin-top: 30px;">
+            <h3 style="font-size: 17px; color: var(--primary); margin-bottom: 14px;">&#128197; 申报规划路线图（按时间窗口）</h3>
+            <div class="roadmap">
+                <div class="roadmap-quarter">
+                    <div class="roadmap-label">Q3<br><span style="font-size:11px;font-weight:400;color:var(--text-light)">7-9月</span></div>
+                    <div class="roadmap-items">
+                        <div class="roadmap-item national"><strong>&#9312;</strong> 超长期国债设备更新（第三批）<br><span style="opacity:0.7">7-8月 | 发改委</span></div>
+                        <div class="roadmap-item city"><strong>&#9313;</strong> 德阳技改试点企业项目<br><span style="opacity:0.7">2026下半年 | 德阳经信局</span></div>
+                        <div class="roadmap-item national"><strong>&#9314;</strong> 医药工业数智化转型示范<br><span style="opacity:0.7">下半年 | 工信部七部门</span></div>
+                    </div>
+                </div>
+                <div class="roadmap-quarter">
+                    <div class="roadmap-label">Q4<br><span style="font-size:11px;font-weight:400;color:var(--text-light)">10-12月</span></div>
+                    <div class="roadmap-items">
+                        <div class="roadmap-item province"><strong>&#9312;</strong> 生物医药产业21条奖补<br><span style="opacity:0.7">全年 | 省经信厅</span></div>
+                        <div class="roadmap-item province"><strong>&#9313;</strong> 企业研发投入激励补贴<br><span style="opacity:0.7">全年 | 省科技厅</span></div>
+                        <div class="roadmap-item city"><strong>&#9314;</strong> 德阳"3+1"产业奖补<br><span style="opacity:0.7">按年度 | 德阳经信局</span></div>
+                    </div>
+                </div>
+                <div class="roadmap-quarter">
+                    <div class="roadmap-label">备战<br><span style="font-size:11px;font-weight:400;color:var(--text-light)">2027年</span></div>
+                    <div class="roadmap-items">
+                        <div class="roadmap-item national"><strong>&#9312;</strong> 智能工厂梯度培育（国家级）<br><span style="opacity:0.7">4-5月 | 工信部六部门</span></div>
+                        <div class="roadmap-item national"><strong>&#9313;</strong> "智改数转"技改项目入库<br><span style="opacity:0.7">1-3月 | 省经信厅</span></div>
+                        <div class="roadmap-item province"><strong>&#9314;</strong> 四川省绿色工厂认定<br><span style="opacity:0.7">3-5月 | 省经信厅</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 归口部门 -->
+        <div style="margin-top: 30px;">
+            <h3 style="font-size: 17px; color: var(--primary); margin-bottom: 14px;">&#127970; 归口部门项目分布</h3>
+            <div class="unit-summary">
+                <div class="unit-card"><div class="unit-name">工信部/国家发改委/财政部</div><div class="unit-count">6</div><div class="unit-desc">国债设备更新 / 智改数转 / 产业基础再造 / 医药数智化 / 智能工厂 / 绿色制造</div></div>
+                <div class="unit-card"><div class="unit-name">四川省经信厅/科技厅/药监局</div><div class="unit-count">3</div><div class="unit-desc">生物医药21条 / 绿色工厂 / 研发投入激励</div></div>
+                <div class="unit-card"><div class="unit-name">德阳市经信局</div><div class="unit-count">2</div><div class="unit-desc">技改试点 / "3+1"产业奖补</div></div>
+                <div class="unit-card"><div class="unit-name">广汉市经信科局</div><div class="unit-count">1</div><div class="unit-desc">产业投资支持</div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== 2. 政策依据汇总 ===== -->
+    <div class="section" id="policy">
+        <div class="section-title"><div class="icon">2</div>政策依据汇总</div>
+        <div class="card policy-card">
+            <h3>国家级政策文件</h3>
+            <div style="margin-top: 12px; font-size: 14px; line-height: 2.2;">
+                <div style="padding: 8px 12px; background: #fafafa; border-radius: 6px; margin-bottom: 8px;"><strong>1.</strong> <a href="https://www.ndrc.gov.cn/fggz/202604/t20260430_1405007.html" target="_blank" rel="noopener">发改环资〔2026〕大规模设备更新和消费品以旧换新政策通知<span class="ext-icon">&#8599;</span></a></div>
+                <div style="padding: 8px 12px; background: #fafafa; border-radius: 6px; margin-bottom: 8px;"><strong>2.</strong> <a href="https://www.cqn.com.cn/qt/content/2025-04/25/content_9102740.htm" target="_blank" rel="noopener">工信部联消费〔2025〕79号《医药工业数智化转型实施方案（2025-2030年）》<span class="ext-icon">&#8599;</span></a></div>
+                <div style="padding: 8px 12px; background: #fafafa; border-radius: 6px; margin-bottom: 8px;"><strong>3.</strong> <a href="https://www.sc.gov.cn/scszfgb/1402/2642/2644/202604/MIT114289.shtml" target="_blank" rel="noopener">四川省《推动新型技术改造实施方案》（川办发）<span class="ext-icon">&#8599;</span></a></div>
+                <div style="padding: 8px 12px; background: #fafafa; border-radius: 6px; margin-bottom: 8px;"><strong>4.</strong> 工信部《智能工厂梯度培育管理办法（暂行）》（六部门联合发布）</div>
+                <div style="padding: 8px 12px; background: #fafafa; border-radius: 6px; margin-bottom: 8px;"><strong>5.</strong> 工信部《产业基础再造和制造业高质量发展专项管理办法》</div>
+                <div style="padding: 8px 12px; background: #fafafa; border-radius: 6px; margin-bottom: 8px;"><strong>6.</strong> 发改委绿色制造工程/工信部绿色工厂评价标准</div>
+            </div>
+        </div>
+        <div class="card policy-card">
+            <h3>四川省级政策文件</h3>
+            <div style="margin-top: 12px; font-size: 14px; line-height: 2.2;">
+                <div style="padding: 8px 12px; background: #fafafa; border-radius: 6px; margin-bottom: 8px;"><strong>1.</strong> <a href="https://www.sc.gov.cn/10462/zfwjts/2025/12/16/272f003d8a1e419cbae73940e7179562.shtml" target="_blank" rel="noopener">《四川省支持生物医药和医疗器械产业高质量发展若干政策措施》（21条）<span class="ext-icon">&#8599;</span></a></div>
+                <div style="padding: 8px 12px; background: #fafafa; border-radius: 6px; margin-bottom: 8px;"><strong>2.</strong> <a href="http://jxt.sc.gov.cn/scjxt/wjfb/2026/1/23/134f980e650645b684b7be3b22f8d8fa.shtml" target="_blank" rel="noopener">2026年四川省"智改数转"项目入库申报通知<span class="ext-icon">&#8599;</span></a></div>
+                <div style="padding: 8px 12px; background: #fafafa; border-radius: 6px; margin-bottom: 8px;"><strong>3.</strong> <a href="http://kjt.sc.gov.cn/xzgfxwj/2026/5/25/cd373c74f9574cafa05e0f495d329bd3.shtml" target="_blank" rel="noopener">《四川省激励企业加大研发投入暂行办法》<span class="ext-icon">&#8599;</span></a></div>
+                <div style="padding: 8px 12px; background: #fafafa; border-radius: 6px; margin-bottom: 8px;"><strong>4.</strong> 绿色工厂梯度培育及管理暂行办法（四川省经信厅）</div>
+            </div>
+        </div>
+        <div class="card policy-card">
+            <h3>德阳/广汉市级政策文件</h3>
+            <div style="margin-top: 12px; font-size: 14px; line-height: 2.2;">
+                <div style="padding: 8px 12px; background: #fafafa; border-radius: 6px; margin-bottom: 8px;"><strong>1.</strong> <a href="https://www.deyang.gov.cn/xwdt/dydt/1954459.htm" target="_blank" rel="noopener">德阳市入选第三批制造业新型技术改造城市试点（中央财政3亿奖补）<span class="ext-icon">&#8599;</span></a></div>
+                <div style="padding: 8px 12px; background: #fafafa; border-radius: 6px; margin-bottom: 8px;"><strong>2.</strong> <a href="https://www.deyang.gov.cn/gk/hqzc/dyfzc/1892242.htm" target="_blank" rel="noopener">《德阳市支持"3+1"主导产业提质倍增的若干政策》<span class="ext-icon">&#8599;</span></a></div>
+                <div style="padding: 8px 12px; background: #fafafa; border-radius: 6px; margin-bottom: 8px;"><strong>3.</strong> 广汉市促进产业投资支持政策</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== 3. 重要提示 + 固定板块 ===== -->
+    <div class="section" id="tips">
+        <div class="card" style="background: #fffbeb; border-color: #f5deb3;">
+            <h3 style="color: #b8860b;">&#9888;&#65039; 重要提示</h3>
+            <p style="font-size: 13px; color: #8b7355; margin-top: 8px;">本清单所列信息基于公开资料整理，仅供参考。具体申报条件、奖补金额和时间节点以各级主管部门发布的最新官方文件为准。建议企业密切关注四川省经信厅、德阳市经信局、广汉市经信科局的年度申报通知，提前做好材料准备。预计奖补金额可能因政策调整而变化，部分项目奖补金额需根据实际投资额计算。</p>
+            <!-- ▼▼▼ 固定板块：项目申报全生命周期 —— 所有企业完全一致，不可修改 ▼▼▼ -->
+            <div class="lifecycle-bar">
+                <h4>&#128203; 项目申报全生命周期</h4>
+                <div class="lifecycle-steps">
+                    <div class="lifecycle-step"><div class="bar"></div><div class="step-label">项目申报</div><div class="step-pct">20%</div></div>
+                    <div class="lifecycle-step"><div class="bar"></div><div class="step-label">评审批复</div><div class="step-pct">20%</div></div>
+                    <div class="lifecycle-step"><div class="bar"></div><div class="step-label">资金下达</div><div class="step-pct">20%</div></div>
+                    <div class="lifecycle-step" style="flex: 2;"><div class="bar"></div><div class="step-label">结项验收</div><div class="step-pct">40%</div></div>
+                </div>
+            </div>
+            <!-- ▲▲▲ 固定板块结束 ▲▲▲ -->
+        </div>
+        <!-- ▼▼▼ 固定板块：项目咨询联系人 —— 所有企业完全一致，不可修改 ▼▼▼ -->
+        <div class="contact-bar">
+            <div class="contact-bar-title">&#128222; 项目咨询联系人</div>
+            <div class="contact-bar-name">赵璐红</div>
+            <div class="contact-bar-info"><span class="cb-label">舍得酒业</span> &middot; 公共事务部总经理</div>
+            <div class="contact-bar-sep"></div>
+            <div class="contact-bar-info"><span class="cb-label">电话</span> <a href="tel:18884606786">18884606786</a></div>
+            <div class="contact-bar-sep"></div>
+            <div class="contact-bar-info"><span class="cb-label">地址</span> 四川省成都市武侯区复地复城国际T1</div>
+        </div>
+        <!-- ▲▲▲ 固定板块结束 ▲▲▲ -->
+    </div>
+
+    <!-- ═══ 折叠面板区域 ═══ -->
+    <div class="collapse-group" id="company">
+        <div class="collapse-group-title">&#9660; 企业详情（点击展开） &#9660;</div>
+
+        <details class="collapse-section">
+            <summary>&#127970; 企业概述</summary>
+            <div class="collapse-body">
+                <div class="card"><p>四川依科制药有限公司（原名：四川蜀中制药有限公司）成立于1999年，隶属于四川蜀中药业集团，是一家集药品研制、开发、生产、销售为一体的大型现代化民营医药制药企业，被誉为"普药大王"。公司占地300余亩，拥有GMP标准厂房，年产能片剂200亿片以上。公司持有药品生产许可证（川20160112），获批生产颗粒剂、硬胶囊剂、片剂、酊剂、丸剂、散剂、糖浆剂等多种剂型，拥有约99个药品批准文号。核心品牌"盖克"于2008年获评中国驰名商标。</p></div>
+                <div class="info-grid">
+                    <div class="info-item"><div class="label">企业全称</div><div class="value">四川依科制药有限公司</div></div>
+                    <div class="info-item"><div class="label">成立年份</div><div class="value">1999年</div></div>
+                    <div class="info-item"><div class="label">法定代表人</div><div class="value">安俊才</div></div>
+                    <div class="info-item"><div class="label">注册资本</div><div class="value">约8500万元</div></div>
+                    <div class="info-item"><div class="label">所属集团</div><div class="value">四川蜀中药业集团</div></div>
+                    <div class="info-item"><div class="label">员工规模</div><div class="value">1400余人</div></div>
+                    <div class="info-item"><div class="label">固定资产</div><div class="value">6.2亿元</div></div>
+                    <div class="info-item"><div class="label">注册地址</div><div class="value">四川省广汉市经济开发区中山大道南四段2号</div></div>
+                </div>
+            </div>
+        </details>
+
+        <details class="collapse-section">
+            <summary>&#9881; 主营业务</summary>
+            <div class="collapse-body">
+                <div class="card"><p>公司以化学仿制药和中药普药的生产制造为核心，定位"大众普药"路线，以高性价比、大规模生产为竞争策略。拥有50多个产品商标，核心品牌"盖克"为中国驰名商标。公司具备中药前处理提取能力，产品涵盖抗感染、解热镇痛、消化系统、心脑血管、中成药等多个治疗领域，是德阳市重点龙头企业。</p></div>
+                <div class="biz-grid">
+                    <div class="biz-card"><div class="biz-icon" style="background: #e8f4fd;">&#128138;</div><h4>抗感染类</h4><p>阿莫西林胶囊、头孢氨苄胶囊/颗粒、乙酰螺旋霉素片等，是公司核心产品线</p></div>
+                    <div class="biz-card"><div class="biz-icon" style="background: #e8fde8;">&#127777;</div><h4>解热镇痛/感冒类</h4><p>复方氨酚烷胺胶囊、复方氨酚那敏颗粒、氨咖黄敏胶囊、氯芬黄敏片等</p></div>
+                    <div class="biz-card"><div class="biz-icon" style="background: #f3e8fd;">&#127807;</div><h4>中成药/清热解毒</h4><p>板蓝根颗粒、玄麦甘桔颗粒、藿香正气水、益母草颗粒、六味地黄丸等</p></div>
+                    <div class="biz-card"><div class="biz-icon" style="background: #fde8e8;">&#128142;</div><h4>消化系统及其他</h4><p>多酶片、胰酶肠溶片、双氯芬酸钠肠溶片、甲硝唑片等</p></div>
+                </div>
+            </div>
+        </details>
+
+        <details class="collapse-section">
+            <summary>&#127942; 已获得的资质与荣誉</summary>
+            <div class="collapse-body">
+                <div class="card"><h3>国家级资质与荣誉</h3><div class="badge-group">
+                    <span class="badge badge-national">&#127942; 国家高新技术企业（2025年认定）</span>
+                    <span class="badge badge-national">&#127942; 中国驰名商标"盖克"（2008年）</span>
+                    <span class="badge badge-national">&#127942; 福布斯中国最具潜力企业100强（2005年第16位）</span>
+                </div></div>
+                <div class="card"><h3>省级资质与荣誉</h3><div class="badge-group">
+                    <span class="badge badge-province">&#127941; 四川省著名商标"盖克""蜀中"</span>
+                    <span class="badge badge-province">&#127941; 德阳市重点龙头企业</span>
+                </div></div>
+                <div class="card"><h3>认证/许可</h3><div class="badge-group">
+                    <span class="badge badge-city">&#127941; 药品GMP认证（多车间）</span>
+                    <span class="badge badge-city">&#127941; 药品生产许可证（川20160112，有效期至2030年）</span>
+                    <span class="badge badge-city">&#127941; 增值税一般纳税人</span>
+                </div></div>
+            </div>
+        </details>
+
+        <details class="collapse-section">
+            <summary>&#128203; 近三年项目申请情况（2024-2026）</summary>
+            <div class="collapse-body">
+                <div class="timeline">
+                    <div class="timeline-item"><div class="year">2025年</div><h4>国家高新技术企业复审</h4><p>通过国家高新技术企业认定（2025年度），持续享受15%企业所得税优惠 <span class="status-done">已通过</span></p></div>
+                    <div class="timeline-item"><div class="year">2026年</div><h4>德阳市入选国家制造业新型技改试点城市</h4><p>德阳市于2026年6月成功入选第三批制造业新型技术改造城市试点，获中央财政最高3亿元奖补，依科制药作为德阳重点医药企业将直接受益 <span class="status-progress">进行中</span></p></div>
+                </div>
+            </div>
+        </details>
+    </div>
+
+</div>
+
+<div class="footer">
+    四川依科制药有限公司 &middot; 2026年度奖补项目申报清单 &middot; 仅供内部参考使用 &middot; 编制日期：2026年6月26日
+</div>
+
+<script>
+    document.querySelectorAll('.nav a').forEach(link => {
+        link.addEventListener('click', function(e) { e.preventDefault(); document.querySelectorAll('.nav a').forEach(a => a.classList.remove('active')); this.classList.add('active'); const t = document.querySelector(this.getAttribute('href')); if (t) t.scrollIntoView({ behavior: 'smooth' }); });
+    });
+    function filterTable(level) { const rows = document.querySelectorAll('#projectTable tbody tr'); const btns = document.querySelectorAll('.filter-btn'); btns.forEach(b => b.classList.remove('active')); event.target.classList.add('active'); rows.forEach(r => { r.style.display = (level === 'all' || r.dataset.level === level) ? '' : 'none'; }); }
+    window.addEventListener('scroll', () => { const secs = document.querySelectorAll('.section, .collapse-group'); const links = document.querySelectorAll('.nav a'); let cur = ''; secs.forEach(s => { if (window.scrollY >= s.offsetTop - 140) cur = s.getAttribute('id'); }); links.forEach(l => { l.classList.remove('active'); if (l.getAttribute('href') === '#' + cur) l.classList.add('active'); }); });
+    document.querySelector('.nav a[href="#company"]').addEventListener('click', function() { setTimeout(() => { document.querySelectorAll('.collapse-section').forEach(d => d.open = true); }, 400); });
+</script>
+
+</body>
+</html>
